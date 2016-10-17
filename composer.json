@@ -1,5 +1,5 @@
 {
-  "name": "ExpandOnline/opencpu-php-library",
+  "name": "ExpandOnline/open-cpu-php-library",
   "type": "project",
   "require": {
     "guzzlehttp/guzzle": "^5.3",

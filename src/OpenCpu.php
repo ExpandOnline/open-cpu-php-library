@@ -29,8 +29,8 @@ class OpenCpu {
      * @return \GuzzleHttp\Message\FutureResponse|\GuzzleHttp\Message\ResponseInterface|\GuzzleHttp\Ring\Future\FutureInterface|null
      */
     public function runScript($packageName, $scriptName, $input = []) {
-        return $this->client->post('library/' . $packageName . '/R' . $scriptName . '/json', [
-            'body' => $input
+        return $this->client->post('library/' . $packageName . '/R/' . $scriptName . '/json', [
+            'json' => $input
         ]);
     }
 }
