@@ -2,8 +2,8 @@
   "name": "ExpandOnline/open-cpu-php-library",
   "type": "project",
   "require": {
-    "guzzlehttp/guzzle": "^5.3",
-    "php": ">=5.4"
+    "guzzlehttp/guzzle": "^6.0",
+    "php": ">=5.5"
   },
   "autoload": {
     "psr-4": {
