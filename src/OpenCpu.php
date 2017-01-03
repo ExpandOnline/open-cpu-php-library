@@ -17,7 +17,7 @@ class OpenCpu {
      */
     public function __construct($baseUrl) {
         $this->client = new Client([
-            'base_url' => $baseUrl
+            'base_uri' => $baseUrl
         ]);
     }
 
@@ -26,8 +26,8 @@ class OpenCpu {
      * @param string $scriptName
      * @param array $input
      *
-     * @return \GuzzleHttp\Message\FutureResponse|\GuzzleHttp\Message\ResponseInterface|\GuzzleHttp\Ring\Future\FutureInterface|null
-     */
+     * @return \Psr\Http\Message\ResponseInterface
+	 */
     public function runScript($packageName, $scriptName, $input = []) {
         return $this->client->post('library/' . $packageName . '/R/' . $scriptName . '/json', [
             'json' => $input
